@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import "./app.css";
+import "./App.css";
 
 import {
   Navbar,
