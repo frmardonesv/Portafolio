@@ -33,17 +33,19 @@ const FeatureProject = ({ projects }) => {
     <FeaturedContainer>
       <h2 className="feature-title">Featured Projects</h2>
       <div className="slider">
-        {projects.map((projectFeature, projectIndex) => {
-          let position = validateSlide(projectIndex);
-          return (
-            <ProjectCard
-              feature
-              position={position}
-              {...projectFeature}
-              key={projectFeature.id}
-            />
-          );
-        })}
+        {projects
+          .filter((item) => item.destacado)
+          .map((projectFeature, projectIndex) => {
+            let position = validateSlide(projectIndex);
+            return (
+              <ProjectCard
+                feature
+                position={position}
+                {...projectFeature}
+                key={projectFeature.id}
+              />
+            );
+          })}
 
         <button
           className="slider-button next"

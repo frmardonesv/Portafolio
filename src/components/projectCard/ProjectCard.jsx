@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, ContainerImagePrev } from "../../styles";
+import { Button } from "../../styles";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { ProjectCardContainer } from "./cardStyles";
 import { AiFillGithub } from "react-icons/ai";
@@ -12,6 +12,7 @@ const ProjectCard = ({
   tecnologias,
   position,
   feature,
+  git,
 }) => {
   return (
     <ProjectCardContainer
@@ -20,7 +21,7 @@ const ProjectCard = ({
       }`}
     >
       <div className="project-image">
-        <ContainerImagePrev />
+        <img src={imagen} alt={nombre} />
       </div>
       <div className="project-info">
         <h2>{nombre}</h2>
@@ -34,13 +35,13 @@ const ProjectCard = ({
         )}
         <div className="project-links">
           <Button padding="7px 20px" font="14px">
-            <a href={link}>
+            <a href={git}>
               <span>GIT</span>
               <AiFillGithub size="25px" />
             </a>
           </Button>
           <Button padding="7px 20px" font="14px" margin="0">
-            <a href="#arara">
+            <a href={link}>
               <span>Demo</span>
               <MdKeyboardArrowRight size="25px" />
             </a>

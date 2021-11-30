@@ -10,6 +10,9 @@ export const ProjectCardContainer = styled.article`
     height: 200px;
     border-radius: 15px;
     overflow: hidden;
+    img {
+      width: 100%;
+    }
   }
   .project-info {
     margin-top: 10px;

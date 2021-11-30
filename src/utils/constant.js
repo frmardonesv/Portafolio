@@ -3,9 +3,11 @@ import {
   AiOutlineUser,
   AiOutlineFileText,
   AiOutlineSend,
-  AiFillGithub,
 } from "react-icons/ai";
 import { FaRegImages } from "react-icons/fa";
+import apiImage from "../assets/img/api.png";
+import streamsImage from "../assets/img/streams.png";
+import comfyImage from "../assets/img/comfy.png";
 
 export const links = [
   {
@@ -32,11 +34,6 @@ export const links = [
     text: "Contacto",
     url: "contacto",
     icon: <AiOutlineSend />,
-  },
-  {
-    text: "GIT",
-    url: "https://github.com/frmardonesv",
-    icon: <AiFillGithub />,
   },
 ];
 
@@ -67,38 +64,30 @@ export const proyectos = [
     nombre: "API",
     descripcion:
       " API la cual utilizo para consumir cierta información en otros proyectos",
-    link: "#API",
-    imagen: "",
+    imagen: apiImage,
+    link: "https://hololivfans-project-api.herokuapp.com/api-docs/",
     tecnologias: ["MongoDB", "NodeJS", "Express"],
-    destacado: false,
+    destacado: true,
+    git: "https://github.com/frmardonesv/API-Info-Holo",
   },
   {
     id: 2,
     nombre: "Streams",
     descripcion: "Aplicación para ver los últimos videos y drectos",
-    imagen: "",
-    link: "#Streams",
+    imagen: streamsImage,
+    link: "https://holofans-streams-fmv.netlify.app/",
     tecnologias: ["ReactJS", "JavaScript", "Styled-Components"],
     destacado: true,
+    git: "https://github.com/frmardonesv/Holo-Streams",
   },
   {
     id: 3,
     nombre: "E-Commerce",
-    descripcion:
-      "API la cual utilizo para consumir cierta información en otros proyectos",
-    imagen: "",
-    link: "#commerce",
+    descripcion: "Un e-commerce, con datos consumidos desde mi API",
+    imagen: comfyImage,
+    link: "https://comfy-sloth-fmv.netlify.app/",
     tecnologias: ["ReactJS", "JavaSciprt", "Styled-Components"],
     destacado: true,
-  },
-  {
-    id: 4,
-    nombre: "Admin Dashboard",
-    descripcion:
-      "API la cual utilizo para consumir cierta información en otros proyectos",
-    imagen: "",
-    link: "#commerce",
-    tecnologias: ["ReactJS", "JavaSciprt", "Styled-Components"],
-    destacado: true,
+    git: "https://github.com/frmardonesv/Comfy-Store",
   },
 ];

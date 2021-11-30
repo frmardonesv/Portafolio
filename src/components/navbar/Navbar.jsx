@@ -5,6 +5,7 @@ import { BsGrid } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { AiFillGithub } from "react-icons/ai";
 
 const getLocalStore = () => {
   let theme = "light-theme";
@@ -55,6 +56,13 @@ const Navbar = () => {
                 </li>
               );
             })}
+
+            <li>
+              <a href="https://github.com/frmardonesv">
+                <AiFillGithub />
+                <span>GIT</span>
+              </a>
+            </li>
           </ul>
         </div>
 

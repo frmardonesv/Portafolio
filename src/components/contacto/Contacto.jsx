@@ -25,7 +25,7 @@ const Contacto = () => {
       <div className="git-info">
         <p>También puedes visitar mi repositorio en GIT.</p>
         <Button padding="10px 35px" margin="0">
-          <a href="#araraaa">
+          <a href="https://github.com/frmardonesv">
             <span>GIT</span>
           </a>
         </Button>
