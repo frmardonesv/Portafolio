@@ -71,16 +71,6 @@ export const proyectos = [
     git: "https://github.com/frmardonesv/API-Info-Holo",
   },
   {
-    id: 2,
-    nombre: "Streams",
-    descripcion: "Aplicación para ver los últimos videos y drectos",
-    imagen: streamsImage,
-    link: "https://holofans-streams-fmv.netlify.app/",
-    tecnologias: ["ReactJS", "JavaScript", "Styled-Components"],
-    destacado: true,
-    git: "https://github.com/frmardonesv/Holo-Streams",
-  },
-  {
     id: 3,
     nombre: "E-Commerce",
     descripcion: "Un e-commerce, con datos consumidos desde mi API",
